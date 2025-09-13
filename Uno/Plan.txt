@@ -1,0 +1,27 @@
+Let's think about this
+
+Goal: Make the game of Uno
+
+Objectives
+- All base rules of Uno should apply. No rules should be eligible to be broken by any player (automated or user).
+- All of my favorite bonus rules of Uno should be playable as well :D. 
+- You should be able to choose how many opponents you can play against (within game rules).
+- There should be a terminal version as well as a graphic displayable version.
+
+Structure
+- I love me some Object-Oriented Programming. Objects:
+    - Card
+        - string: color
+        - char: id
+        - int: number id (if applicable)
+    - Player
+        - vector<Card>: hand
+        - bool: skipped
+        - int: extraDraw
+        - bool: out
+        - Player*: nextPlayer
+    - GamePlay(main)
+        - int: numPlayers
+        - Player*: curPlayer
+        - bool: rules_check()
+        - void: end_game()
