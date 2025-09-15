@@ -2,6 +2,7 @@
 #define CARD_HPP
 
 #include<cstring>
+
 /*
 Class - Card
     Purpose: To encapsulate all identification of a single card into one central object.
@@ -28,14 +29,13 @@ Class - Card
                 Outputs the charID.
             - read_colorID() (string): method
                 Outputs the colorID.
-
 */
 class Card {
 private:
     //Variables
-    const short int numID;
-    const char charID;
-    const string colorID;
+    short int numID;
+    char charID;
+    string colorID;
 
 public:
     //Methods
@@ -44,5 +44,6 @@ public:
     char read_charID() const;
     string read_colorID() const;
 };
+
 
 #endif
