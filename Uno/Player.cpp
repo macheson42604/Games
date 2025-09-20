@@ -2,11 +2,11 @@
 
 using namespace std;
 
-Player::Player(Player* next) {
+Player::Player(bool comp) {
     skipped = false;
     out = false;
     extraDraw = 0;
-    nextPlayer = next;
+    computer = comp;
 }
 
 vector<Card> Player::read_hand() const {
@@ -31,4 +31,8 @@ Player* Player::read_nextPlayer() const {
 
 void Player::draw_card(Card newCard) {
     hand.push_back(newCard);
+}
+
+void Player:: set_nextPlayer(Player* next) {
+
 }
