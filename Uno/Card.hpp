@@ -1,7 +1,9 @@
 #ifndef CARD_HPP
 #define CARD_HPP
 
-#include<cstring>
+#include<string>
+
+using namespace std;
 
 /*
 Class - Card

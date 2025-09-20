@@ -12,7 +12,7 @@ TARGET = uno
 TARGET_DEL = uno.exe
 
 # Source files
-SRCS = GamePlay.cpp Card.hpp Player.hpp
+SRCS = GamePlay.cpp Card.cpp Player.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
