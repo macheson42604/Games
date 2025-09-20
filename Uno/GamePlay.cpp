@@ -36,10 +36,10 @@ Player* make_player_list() {
         bool invalid = false;
         if (inputPlayers.size() == 1) { // Valid: 1 character long
             if (isdigit(inputPlayers[0])) { // Valid: is a digit
-                if (numPlayers <= 0 || numPlayers > 9) { // Invalid: not appropriate number of players for Uno
+                if (stoi(inputPlayers) <= 0 || stoi(inputPlayers) > 9) { // Invalid: not appropriate number of players for Uno
                     invalid = true;
-                } else {                                 // Valid: appropriate number of players for Uno
-                    numPlayers = (int)inputPlayers[0];// this step must occur to exit the while loop
+                } else {                                                 // Valid: appropriate number of players for Uno
+                    numPlayers = stoi(inputPlayers); // this step must occur to exit the while loop
                 }
 
             } else {                        // Invalid: not a digit
